@@ -3,13 +3,26 @@ package main
 import (
 	"log"
 	"os"
+	"strings"
 	"text/template"
 )
+
+func firstThree(s string) string {
+	s = strings.TrimSpace(s)
+	s = s[:3]
+	return s
+
+}
+
+var fm = template.FuncMap{
+	"uc": strings.ToUpper,
+	"ft": firstThree,
+}
 
 var tpl *template.Template
 
 func init() {
-	tpl = template.Must(template.ParseGlob("templates/*.gohtml"))
+	tpl = template.Must(template.New("").Funcs(fm).ParseGlob("templates/*.gohtml"))
 }
 
 type sage struct {
