@@ -1,0 +1,106 @@
+html, body, main, p, footer, div, svg, h1, button {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: grey;
+}
+
+/*body, main, p, footer, div, h1, button {
+  border: 1px dashed red;
+}*/
+
+/*svg {
+  border: 2px solid blue;
+}*/
+
+main {
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  font-size: 100px;
+  text-align: center;
+}
+
+footer {
+  height: 100px;
+
+  display: flex;
+  justify-content: space-between;
+
+  border-top: 2px solid grey;
+  margin: 0 20px;
+}
+
+div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#f1 {
+  width: 30%;
+
+  /*display: flex;*/
+}
+
+.ftr-svg-spin {
+  fill: currentColor;
+  height: 3rem;
+  width: 3rem;
+  animation-name: spinner;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes spinner {
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(360deg);}
+}
+
+h1 {
+  font-weight: 400;
+  margin: 0 10px;
+}
+
+#f2 {
+  width: 30%;
+
+}
+
+button {
+  height: 50px;
+  width: 100px;
+  margin: 0 10px;
+
+  font-size: 2rem;
+  font-family: sans-serif;
+
+  cursor: pointer;
+}
+
+#b1 {
+  background-color: white;
+  color: deepskyblue;
+}
+
+#b1:hover {
+  background-color: deepskyblue;
+  color: white;
+}
+
+#b2 {
+  background-color: deepskyblue;
+  color: white;
+}
+
+#b2:hover {
+  background-color: white;
+  color: deepskyblue;
+}
