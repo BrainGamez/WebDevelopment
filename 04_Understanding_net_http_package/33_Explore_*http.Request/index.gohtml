@@ -11,7 +11,7 @@
     {{if .ContentLength}}<p>The request content length: {{.ContentLength}}</p>{{end}}
 
     {{if .URL}}<p>The request URL: {{.URL}}</p>
-    <ul>
+    <ol>
         <li>Scheme: {{.URL.Scheme}}</li>
         <li>Opaque: {{.URL.Opaque}}</li>
         <li>Path: {{.URL.Path}}</li>
@@ -19,7 +19,7 @@
         <li>ForceQuery: {{.URL.ForceQuery}}</li>
         <li>RawQuery: {{.URL.RawQuery}}</li>
         <li>Fragment: {{.URL.Fragment}}</li>
-    </ul>
+    </ol>
     {{end}}
 
     {{if .Header}}
