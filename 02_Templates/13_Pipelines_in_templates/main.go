@@ -22,7 +22,7 @@ var fm = template.FuncMap{
 }
 
 func main() {
-	err := tpl.ExecuteTemplate(os.Stdout, "tpl.gohtml", time.Now())
+	err := tpl.ExecuteTemplate(os.Stdout, "index.gohtml", time.Now())
 	if err != nil {
 		log.Fatal(err)
 	}

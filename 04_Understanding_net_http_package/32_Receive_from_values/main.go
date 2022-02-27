@@ -19,7 +19,7 @@ func (m hotdog) ServeHTTP(w http.ResponseWriter, req *http.Request) {
 var tpl *template.Template
 
 func init() {
-	//tpl = template.Must(template.ParseFiles("templates/tpl.gohtml"))
+	//tpl = template.Must(template.ParseFiles("templates/index.gohtml"))
 	//tpl = template.Must(template.ParseGlob("templates/*.gohtml"))
 	tpl = template.Must(template.ParseFiles("index.gohtml"))
 }

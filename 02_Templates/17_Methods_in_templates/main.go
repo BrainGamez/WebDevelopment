@@ -35,7 +35,7 @@ func main() {
 		Age:  56,
 	}
 
-	err := tpl.ExecuteTemplate(os.Stdout, "tpl.gohtml", p1)
+	err := tpl.ExecuteTemplate(os.Stdout, "index.gohtml", p1)
 	if err != nil {
 		log.Fatal(err)
 	}

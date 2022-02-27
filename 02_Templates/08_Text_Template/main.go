@@ -11,7 +11,7 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
-	err = tpl.ExecuteTemplate(os.Stdout, "tpl.gohtml", nil)
+	err = tpl.ExecuteTemplate(os.Stdout, "index.gohtml", nil)
 	if err != nil {
 		log.Fatal(err)
 	}

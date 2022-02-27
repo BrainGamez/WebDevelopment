@@ -50,7 +50,7 @@ func main() {
 
 	sages := []sage{Buddha, Gandhi, MLK}
 
-	err := tpl.ExecuteTemplate(os.Stdout, "tpl.gohtml", sages)
+	err := tpl.ExecuteTemplate(os.Stdout, "index.gohtml", sages)
 	if err != nil {
 		log.Fatal(err)
 	}
