@@ -23,7 +23,7 @@ func main() {
 		"Francisca",
 	}
 
-	err := tpl.ExecuteTemplate(os.Stdout, "index.gohtml", data)
+	err := tpl.ExecuteTemplate(os.Stdout, "client.gohtml", data)
 	if err != nil {
 		log.Fatal(err)
 	}

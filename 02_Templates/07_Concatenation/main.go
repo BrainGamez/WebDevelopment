@@ -24,7 +24,7 @@ func main() {
 		</body>
 			</html>
 		`)
-	nf, err := os.Create("index.html")
+	nf, err := os.Create("index.gohtml")
 	if err != nil {
 		log.Fatal("Error creating file", err)
 	}
