@@ -65,7 +65,7 @@ func responseOK(conn net.Conn) {
 
 	fmt.Fprint(conn, "HTTP/1.1 200 OK\r\n")
 	fmt.Fprintf(conn, "Content-Length: %d\r\n", len(body))
-	fmt.Fprint(conn, "Content-Type: text/html\r\n")
+	fmt.Fprint(conn, "Content-Type: text.txt/html\r\n")
 	fmt.Fprint(conn, "\r\n")
 	fmt.Fprint(conn, body)
 }
@@ -76,7 +76,7 @@ func responseNOTFound(conn net.Conn) {
 
 	fmt.Fprint(conn, "HTTP/1.1 404 Not Found\r\n")
 	fmt.Fprintf(conn, "Content-Length: %d\r\n", len(body))
-	fmt.Fprint(conn, "Content-Type: text/html\r\n")
+	fmt.Fprint(conn, "Content-Type: text.txt/html\r\n")
 	fmt.Fprint(conn, "\r\n")
 	fmt.Fprint(conn, body)
 }

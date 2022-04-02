@@ -45,7 +45,7 @@ func foo(w http.ResponseWriter, req *http.Request) {
 		s = string(bs)
 
 		// store file on server
-		dst, err := os.Create(filepath.Join("./text/", h.Filename))
+		dst, err := os.Create(filepath.Join("./text.txt/", h.Filename))
 		if err != nil {
 			http.Error(w, err.Error(), http.StatusInternalServerError)
 			return
@@ -57,6 +57,6 @@ func foo(w http.ResponseWriter, req *http.Request) {
 			http.Error(w, err.Error(), http.StatusInternalServerError)
 		}
 	}
-	w.Header().Set("Content-Type", "text/html; charset=utf-8")
+	w.Header().Set("Content-Type", "text.txt/html; charset=utf-8")
 	tpl.ExecuteTemplate(w, "client.gohtml", s)
 }

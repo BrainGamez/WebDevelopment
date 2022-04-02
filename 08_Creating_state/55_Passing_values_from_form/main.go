@@ -13,11 +13,11 @@ func main() {
 
 func foo(w http.ResponseWriter, req *http.Request) {
 	v := req.FormValue("q")
-	w.Header().Set("Content-Type", "text/html; charset=utf-8")
+	w.Header().Set("Content-Type", "text.txt/html; charset=utf-8")
 	io.WriteString(w, `
 	<!DOCTYPE html>
 	<form method="get">
-		<input type="text" name="q">
+		<input type="text.txt" name="q">
 		<input type="submit">
 	</form>
 	<br>`+v)
